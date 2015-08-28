@@ -1,0 +1,16 @@
+<table>
+ <row>
+  <table>
+   <row><label path="SUBM" cols="2"/></row>
+   <row><label path="SUBM:NAME"/><bean path="SUBM:NAME" wx="1"/></row>
+   <row><label path="SUBM:ADDR"/><bean path="SUBM:ADDR" wx="1" wy="1"/></row>
+   <row><label path="SUBM:ADDR:CITY"/><bean path="SUBM:ADDR:CITY" wx="1"/></row>
+   <row><label path="SUBM:ADDR:POST"/><bean path="SUBM:ADDR:POST" wx="1"/></row>
+   <row><label path="SUBM:LANG"/><bean path="SUBM:LANG" wx="1"/></row>
+  </table>
+  <col>
+   <bean path="." type="genj.edit.beans.MediaBean" wx="1" wy="1"/>
+  </col>
+ </row>
+ <bean path="." type="genj.edit.beans.ReferencesBean" wx="1" cols="2"/>
+</table>

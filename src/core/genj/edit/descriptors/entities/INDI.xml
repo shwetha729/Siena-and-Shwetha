@@ -1,0 +1,29 @@
+<col>
+ <row>
+  <col pad="8">
+   <label path="INDI"/>
+   <bean path="INDI:NAME" gx="1"/>
+   <row><label path="INDI:BIRT"/><bean path="INDI:SEX" gx="1" ax="1"/></row>
+   <col pad="1,8,1,1">
+    <bean path="INDI:BIRT:DATE"/>
+    <bean path="INDI:BIRT:PLAC" gx="1"/>
+   </col>
+   <label path="INDI:DEAT"/>
+   <col pad="1,8,1,1">
+    <bean path="INDI:DEAT:DATE"/>
+    <bean path="INDI:DEAT:PLAC" gx="1"/>
+   </col>
+  </col>
+  <col gx="1" pad="8">
+   <row gy="1"><bean path="." type="genj.edit.beans.MediaBean" gx="1" gy="1"/></row>
+  </col>
+ </row>
+ <col>
+  <fold key="relationships"/>
+  <bean path="." type="genj.edit.beans.RelationshipsBean" gy="1" gx="1" wy="1" pad="8"/>
+ </col>
+ <col>
+  <fold key="events"/>
+  <bean path="." type="genj.edit.beans.EventsBean" gy="1" gx="1" wy="1" pad="8"/>
+ </col>
+</col>
