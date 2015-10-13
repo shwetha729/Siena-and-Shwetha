@@ -367,6 +367,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
     hideAncestors.addAll(ids);
   }
 
+  //OUR ATTEMPT AT CLEARING THE LIST OF HIDDEN IDS
+  public void clearHiddenIDs() {
+	  hideAncestors.clear();
+	  hideDescendants.clear();
+  }
+  
   /**
    * Accessor - id's of entities hiding descendants
    */
