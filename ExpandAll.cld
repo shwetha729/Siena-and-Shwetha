@@ -720,8 +720,8 @@
             <constraint>
               <height>-1</height>
               <width>-1</width>
-              <x>687</x>
-              <y>362</y>
+              <x>657</x>
+              <y>338</y>
             </constraint>
             <sourceConnections/>
             <targetConnections>
@@ -2017,8 +2017,8 @@
             <constraint>
               <height>-1</height>
               <width>-1</width>
-              <x>501</x>
-              <y>364</y>
+              <x>1058</x>
+              <y>373</y>
             </constraint>
             <sourceConnections/>
             <targetConnections/>
@@ -3646,8 +3646,8 @@
       <constraint>
         <height>-1</height>
         <width>-1</width>
-        <x>87</x>
-        <y>1171</y>
+        <x>1054</x>
+        <y>13</y>
       </constraint>
       <sourceConnections/>
       <targetConnections/>

@@ -186,7 +186,9 @@ public class TreeView extends View implements ContextProvider, ActionProvider {
     isAntialiasing = REGISTRY.get("antial", false);
     model.setHideAncestorsIDs(REGISTRY.get("hide.ancestors", new ArrayList<String>()));
     model.setHideDescendantsIDs(REGISTRY.get("hide.descendants", new ArrayList<String>()));
- 
+    //Where we might put our code to clear if the button is pressed
+    
+    
     // setup child components
     contentRenderer = new ContentRenderer();
     content = new Content();
