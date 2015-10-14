@@ -142,6 +142,8 @@ public class TreeViewSettings extends JTabbedPane {
     bPanel.add(new JButton(down));
     bPanel.add(new JButton(delete));
     
+    
+    
     // add those tabs
     add(RESOURCES.getString("page.main")  , options);
     add(RESOURCES.getString("page.colors"), colors);
@@ -244,6 +246,7 @@ public class TreeViewSettings extends JTabbedPane {
       bookmarks.delete(i);
     }
   } //ActionDelete
+
 
   private class Commit implements ChangeListener, ActionListener, ListDataListener {
     

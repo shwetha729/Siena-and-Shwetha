@@ -60,7 +60,8 @@ public class Action2 extends AbstractAction {
     TXT_YES         = UIManager.getString("OptionPane.yesButtonText"),
     TXT_NO          = UIManager.getString("OptionPane.noButtonText"),
     TXT_OK          = UIManager.getString("OptionPane.okButtonText"),
-    TXT_CANCEL  = UIManager.getString("OptionPane.cancelButtonText");
+    TXT_CANCEL  	= UIManager.getString("OptionPane.cancelButtonText");
+  	//TXT_EXPANDALL	= 
   
   /** constructor */
   public Action2() {
