@@ -85,6 +85,11 @@ import java.util.concurrent.CopyOnWriteArrayList;
   /** whether we show toggles for un/folding */
   private boolean isFoldSymbols = true;
   
+  
+  //OUR CODE/////////////////////////////////////////////////////////////////////////////////////////////////
+  private boolean isExpandAll = false;
+  
+  
   /** individuals whose ancestors we're not interested in */
   private Set<String> hideAncestors = new HashSet<String>();
 
@@ -146,6 +151,26 @@ import java.util.concurrent.CopyOnWriteArrayList;
     return root;
   }
     
+  /** 
+   * Accessor - expand all
+   **/
+  public void setExpandAll(boolean set) {
+    if (isExpandAll==set) return;
+    isExpandAll = set;
+    if (set)
+    {
+      clearHiddenIDs();
+    }
+    update();
+  }
+  
+  /**
+   * Accessor - get isExpandAll
+   */
+  public boolean isExpandAll() {
+    return isExpandAll;
+  }
+  
   /**
    * Accessor - wether we're vertical
    */

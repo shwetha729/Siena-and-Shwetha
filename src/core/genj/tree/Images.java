@@ -35,7 +35,8 @@ final class Images {
     imgVert,
     imgDoFams,
     imgDontFams,
-    imgFoldSymbols;
+    imgFoldSymbols,
+    imgExpand;
     
   /**
    * Constructor which pre-loads all images
@@ -53,6 +54,7 @@ final class Images {
     imgDontFams    = new ImageIcon(this,"images/DontFams"   ); 
 
     imgFoldSymbols = new ImageIcon(this,"images/FoldUnfold"    );
+    imgExpand      = new ImageIcon(this, "images/Expand");
   }
   
 } //Images
