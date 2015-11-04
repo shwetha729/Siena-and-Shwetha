@@ -1,0 +1,15 @@
+<aspectj>
+	<aspects>
+		<concrete-aspect name="com.maintainj.inst.J2SEAspect" extends="com.maintainj.aspect.J2SEExecutionAspect">
+			<pointcut name="anyExecution" expression="execution( * *.*(..)) || execution( *.new(..))"/>
+			<pointcut name="beforeMain" expression="execution(public static void genj.app.App.main(String[])) || execution(public static void genj.app.App.main(String...))"/>
+		</concrete-aspect>
+	</aspects>
+	<weaver options="-proceedOnError -nowarn -XaddSerialVersionUID  -Xset:makeTjpFieldsTransient=true -Xset:avoidFinal=true">
+		<include within="genj.tree..*"/>
+		<include within="genj.app.App"/>
+		<exclude within="*ObjectFactory"/>
+		<exclude within="*..*CGLIB*"/>
+		<exclude within="com.maintainj..*"/>
+	</weaver>
+</aspectj>
