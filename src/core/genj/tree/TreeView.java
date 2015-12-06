@@ -467,7 +467,9 @@ public class TreeView extends View implements ContextProvider, ActionProvider {
     toolbar.addSeparator();
     
     // expand all
-    toolbar.add(bh.create(new ActionExpandAll(), Images.imgExpand, model.isExpandAll()));
+    //toolbar.add(bh.create(new ActionExpandAll(), Images.imgExpand, model.isExpandAll()));
+    ActionExpandAll expandAllButton = new ActionExpandAll();
+    toolbar.add(expandAllButton);
     
     // vertical/horizontal
     toolbar.add(bh.create(new ActionOrientation(), Images.imgVert, model.isVertical()));
@@ -1052,13 +1054,13 @@ public class TreeView extends View implements ContextProvider, ActionProvider {
      */
     private ActionExpandAll() {
       super.setImage(Images.imgExpand);
-      //super.setTip(RESOURCES, "expandall.tip");
+      super.setTip("Expand all");
     }
     /**
      * @see genj.util.swing.Action2#execute()
      */
     public void actionPerformed(ActionEvent event) {
-      model.setExpandAll(!model.isExpandAll());
+      model.setExpandAll(true);
       scrollToCurrent();
     }
   }//ActionExpanding

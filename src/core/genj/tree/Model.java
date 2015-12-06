@@ -86,7 +86,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
   private boolean isFoldSymbols = true;
   
   
-  //OUR CODE/////////////////////////////////////////////////////////////////////////////////////////////////
+  /** whether we want to expand the tree */
   private boolean isExpandAll = false;
   
   
@@ -160,6 +160,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
     if (set)
     {
       clearHiddenIDs();
+      setExpandAll(false);
     }
     update();
   }
@@ -392,7 +393,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
     hideAncestors.addAll(ids);
   }
 
-  //OUR ATTEMPT AT CLEARING THE LIST OF HIDDEN IDS
+  /**clears all hidden ancestors and descendants  */
   public void clearHiddenIDs() {
 	  hideAncestors.clear();
 	  hideDescendants.clear();
